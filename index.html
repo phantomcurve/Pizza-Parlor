@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Party</title>
+</head>
+<body>
+  <h1>Pizza!</h1>
+  <div class=forms>
+    <h2>Choose your toppings:</h2>
+    <form id="toppings-sizes">
+      <div class="form-group">
+          <input type="checkbox" name="toppings" value="Pepperoni" checked>Pepperoni<br>
+          <input type="checkbox" name="toppings" value="Cheese">Extra Cheese<br>
+          <input type="checkbox" name="toppings" value="Vegetables">Seasonal Roasted Vegetables<br>
+      </div>  
+
+    <h2>Choose your size</h2>
+      <div class="form-group">
+        <select class="form-control-lg" id="size">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-block" id="submit"><strong><span style="color:black">submit</span></strong></button>
+    </form>
+    <div class="price">
+      <div id="Order">
+        <p>Your order: <span id="yourPizza"></span></p>
+      </div>
+      <p>Your pizza is really gonna cost you...<span id="totalPrice"></span> dollars, to be exact!</p>
+    </div>
+  </div>
+</body>
