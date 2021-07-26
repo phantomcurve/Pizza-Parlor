@@ -32,3 +32,7 @@ Expected outcome: let pizzaParty = new Pizza(toppings, size)
 Describe sizePrice()
 Test: "It should define and add a specified price for a specified size selection."
 Expected outcome: if this.size === small => currentPrice = 15
+
+Describe toppingsPrice()
+Test: "It should define and add the price for toppings based on the number of toppings chosen."
+Expected outcome: if toppings.length === 2 => this.currentPrice += 6
