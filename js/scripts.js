@@ -22,3 +22,25 @@ Pizza.prototype.toppingsPrice = function() {
   this.currentPrice = this.currentPrice + (this.toppings.length * 3);
   return this.currentPrice;
 }
+
+ //UI Logic
+
+ $(document).ready(function() {
+  $("form#toppings-sizes").submit(function(event) {
+    event.preventDefault();
+    
+    let pizzaSize = $("#size").val();
+    toppings = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      toppings.push($(this).val());
+    });
+    let pizzaParty = new Pizza (toppings, pizzaSize)
+    
+    pizzaParty.sizePrice();
+    pizzaParty.toppingsPrice();
+    let totalPrice = pizzaParty.currentPrice;
+    $(".price").show();
+    $("#yourPizza").text(pizzaSize + " " + toppings.join(" ") + " pizza!");
+    $("#totalPrice").text(totalPrice);
+  });
+});
