@@ -40,7 +40,7 @@ Pizza.prototype.toppingsPrice = function() {
     pizzaParty.toppingsPrice();
     let totalPrice = pizzaParty.currentPrice;
     $(".price").show();
-    $("#yourPizza").text(pizzaSize + " " + toppings.join(" ") + " pizza!");
+    $("#yourPizza").text(pizzaSize + " " + toppings.join(" + ") + " pizza!");
     $("#totalPrice").text(totalPrice);
   });
 });

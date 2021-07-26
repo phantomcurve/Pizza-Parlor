@@ -39,6 +39,10 @@ Expected outcome: if toppings.length === 2 => this.currentPrice += 6
 
 ## How to download to view!
 
+Just click here, [yeah, right here!](https://phantomcurve.github.io/pizza/)
+
+OR you can do the following:
+
 * Be alive
 * Learn to use computer
 * Connect to internet
