@@ -23,7 +23,12 @@ This website allows the user to select from 3 different toppings and 3 different
 ## Tests/Specs
 
 Describe Pizza()
-Test: It should create an object called Pizza with properties of:
+Test: "It should create an object called Pizza with properties of":
 * toppings
 * size
 * current price
+Expected outcome: let pizzaParty = new Pizza(toppings, size)
+
+Describe sizePrice()
+Test: "It should define and add a specified price for a specified size selection."
+Expected outcome: if this.size === small => currentPrice = 15
